@@ -25,8 +25,9 @@ export const componentDidUpdate = function componentDidUpdate(
   prevProps: Props
 ) {
   const { location }: Props = this.props
-
-  if (location !== prevProps.location) {
+  const prev = prevProps.location && prevProps.location.contains("?") ? prevProps.location.substring(0, prevProps.location.indexOf("?")) : prevProps.location;
+  const current = location && location.contains("?") ? location.substring(0, location.indexOf("?")) : location;
+  if (current !== prev) {
     window.scrollTo(LEFT, TOP)
   }
 }

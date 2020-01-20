@@ -1,68 +1,19 @@
 {
-  "name": "react-router-scroll-top",
-  "description": "An easy scroll to top component based on the React Router Scroll Restoration Example",
-  "version": "0.2.1",
-  "main": "dist/react-router-scroll-top.cjs.js",
-  "module": "dist/react-router-scroll-top.esm.js",
-  "author": "Edoardo L'Astorina",
+  "name": "react-scroll-top",
+  "version": "1.0.0",
+  "description": "[![npm Version](https://img.shields.io/npm/v/react-router-scroll-top.svg?style=flat-square)](https://www.npmjs.com/package/react-router-scroll-top) [![Build Status](https://img.shields.io/travis/bluframe/react-router-scroll-top/master.svg?style=flat-square)](https://travis-ci.org/bluframe/react-router-scroll-top)",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/bluframe/react-router-scroll-top.git"
+    "url": "git+https://github.com/abedjaradat2017/react-router-scroll-top.git"
   },
-  "license": "MIT",
-  "scripts": {
-    "build": "rollup -c",
-    "clean": "rm -fr dist/",
-    "prepublish": "yarn test && yarn run clean && yarn run build",
-    "test": "eslint src/ && flow && jest --silent --coverage"
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abedjaradat2017/react-router-scroll-top/issues"
   },
-  "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/plugin-transform-flow-strip-types": "^7.0.0",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/preset-react": "^7.0.0",
-    "babel-core": "^7.0.0-bridge.0",
-    "babel-eslint": "^8.0.2",
-    "babel-jest": "^23.6.0",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "eslint": "^4.17.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-flowtype": "^2.44.0",
-    "eslint-plugin-html": "^4.0.2",
-    "eslint-plugin-prettier": "^2.6.0",
-    "eslint-plugin-react": "^7.6.1",
-    "flow-bin": "^0.83.0",
-    "jest-cli": "^21.2.1",
-    "prettier": "^1.14.3",
-    "prettier-eslint": "^8.2.2",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-router-dom": "^4.2.2",
-    "react-test-renderer": "^16.1.1",
-    "rollup": "^0.66.6",
-    "rollup-plugin-babel": "^4.0.3",
-    "sinon": "^4.1.2"
-  },
-  "peerDependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-router-dom": "^4.2.2"
-  },
-  "jest": {
-    "transform": {
-      ".js": "<rootDir>/node_modules/babel-jest"
-    },
-    "testRegex": "(/__tests__/.*|\\.test)\\.js$"
-  },
-  "files": [
-    "dist"
-  ],
-  "keywords": [
-    "react",
-    "react router",
-    "scroll restoration",
-    "scroll",
-    "scroll to top"
-  ]
+  "homepage": "https://github.com/abedjaradat2017/react-router-scroll-top#readme"
 }
